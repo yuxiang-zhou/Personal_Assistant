@@ -11,7 +11,7 @@ if __name__ == '__main__':
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
 
     # connection to hostname on the port.
-    s.connect((socket.gethostname(), 9000))                               
+    s.connect(('178.62.38.12', 9000))                               
 
     # Receive no more than 1024 bytes
     while True:

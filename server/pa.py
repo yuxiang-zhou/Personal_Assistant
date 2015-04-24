@@ -50,7 +50,7 @@ def start_connection_handler(client_list):
         socket.AF_INET, socket.SOCK_STREAM
     )
     # bind the socket to a public host, and servicing port
-    serversocket.bind((socket.gethostname(), 9000))
+    serversocket.bind(('', 9000))
     #become a server socket
     serversocket.listen(5)
 
